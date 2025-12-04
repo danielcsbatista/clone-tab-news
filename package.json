@@ -1,0 +1,29 @@
+{
+  "name": "clone-tab-news",
+  "version": "1.0.0",
+  "description": "Teste e treinamento",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielcsbatista/clone-tab-news.git"
+  },
+  "keywords": [
+    "Tests",
+    "treinamento",
+    "curso"
+  ],
+  "author": "Daniel Batista",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danielcsbatista/clone-tab-news/issues"
+  },
+  "homepage": "https://github.com/danielcsbatista/clone-tab-news#readme",
+  "dependencies": {
+    "next": "^13.1.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
