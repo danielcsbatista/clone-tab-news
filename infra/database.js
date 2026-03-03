@@ -17,6 +17,14 @@ async function query(queryObj) {
   } catch (error) {
     console.error(error);
   } finally {
+    console.log({
+      host: process.env.POSTGRES_HOST,
+      port: process.env.POSTGRES_PORT,
+      user: process.env.POSTGRES_USER,
+      database: process.env.POSTGRES_DB,
+      password: process.env.POSTGRES_PASSWORD,
+      ssl: getSSLValues(),
+    });
     await client.end();
   }
 }
@@ -31,5 +39,5 @@ function getSSLValues() {
       ca: process.env.POSTGRES_CA,
     };
   }
-  return process.env.NODE_ENV === "development" ? true : false;
+  return process.env.NODE_ENV === "development" ? false : true;
 }
